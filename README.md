@@ -20,7 +20,7 @@ We will look largely at Relational Databases. They contain connected data that a
 - Must never changed, it made at the inception of the table
 - Each table must have a maximum of one primary key :point_up:
 
-##Foreign Key
+## Foreign Key
 - Natural relationships exist between tables in most databases. Foreign keys used to create solid relationships.
 - Foreign keys ensure that the row of information in table A corresponds to the correct row of information in table B
 - The constraint is used to prevent actions that would destroy links between tables.
@@ -28,3 +28,13 @@ We will look largely at Relational Databases. They contain connected data that a
 - There is no uniqueness constraint for foreign keys
 - A table can have any number of foreign keys
 - A row cannot be deleted from a reference table if it is in use via a foreign key
+
+## Examples of Database Tools
+- Microsoft Access
+- SQL Server Editions
+- PostgreSQL
+- SQLite
+- MySQL
+- Redis - "not only SQL"
+- MongoDB - "not only SQL"
+- Oracle
