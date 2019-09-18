@@ -62,3 +62,15 @@ USE DB_name;
 + BINARY - string of 0 & 1's (up to 16 bits)
 + FLOAT - large mathematical number e.g. pi
 + BIT - 0 or 1, boolean
+
+### Creating a Table in your Database
+```SQLite
+USE DB_name;
+CREATE TABLE table_name
+(
+Column_1 DATA_TYPE
+Column_2 DATA_TYPE
+Column_3 DATA_TYPE
+...
+  )
+```
