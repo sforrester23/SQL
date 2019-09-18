@@ -38,3 +38,9 @@ We will look largely at Relational Databases. They contain connected data that a
 - Redis - "not only SQL"
 - MongoDB - "not only SQL"
 - Oracle
+
+## Languages for dealing with data in SQL
+- DML: Data Manipulation Language - SELECT, INSERT, UPDATE, DELETE
+- DDL: Data Definition Language - CREATE, ALTER, DROP, TRUNCATE
+- DCL: Data Control Language - GRANT, REVOKE
+- TCL: Transaction Control Language - COMMIT, ROLLBACK, SAVEPOINT
