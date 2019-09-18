@@ -48,5 +48,8 @@ We will look largely at Relational Databases. They contain connected data that a
 ## SQL COMMANDS
 
 ### Creating & Using a database
-<CREATE DATABASE [DB_name];>
-<USE [DB_name];>
+```SQLite
+CREATE DATABASE DB_name;
+
+USE DB_name;
+```
