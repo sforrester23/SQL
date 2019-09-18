@@ -189,3 +189,18 @@ FROM table;
 - COUNT: for the total number of non-empty entries in rows selected.
 
 These must use a **GROUP BY** clause.
+
+### Joins
+
+```SQLite
+SELECT column, AGGREGATE FUNCTION
+FROM table_1
+JOIN table_2 ON table_1.SAME_COLUMN=table_2.SAME_COLUMN %these two tables need to share the same column data e.g. a primary key would be good%
+WHERE condition
+GROUP BY column;
+```
+### Sub-Query
+Is a nested query inside another SELECT statement, which allows you to take the results of one query and use it in another.
+```SQLite
+SELECT column_1 FROM table_1
+WHERE column_x NOT IN (SELECT column_x FROM table_2)
