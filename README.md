@@ -107,10 +107,56 @@ DELETE FROM table_name
 WHERE column_name_for_basis_of_data_delete = condition_on_which_row_to_delete; %this condition should define the data point that needs to be deleted. This will delete the WHOLE ROWS that fit the condition prescribed on columns.
 ```
 
-### Using NULL and NOT null
+### Using NULL and NOT NULL
 
 You can add the phrase "NOT NULL" to the end of column names when setting up a table to make the column not empty by default.
 
 ### Setting up a primary key when setting up a table
 
 Use the phrase "IDENTITY PRIMARY KEY" when setting up a table to select the primary key for that table. If you do not do this, one will be assigned automatically. If you do not do this you will not be able to change it after the table is made.
+
+### Database Considerations
++ Data Security
++ Data Recovery
++ Data Integrity
++ Normal Form
+
+### Normal Form
+
+A database is in its *First Normal Form* when:
+- Everything is as small as it can be
+- There are no repeating groups
+
+A database is in its *Second Normal Form* when:
+- It is in _First Normal Form_
+- All non-key attributes are fully functionally dependent on the Primary Key
+
+A database in it its *Third Normal Form* when:
+- It is in _Second Normal Form_
+- There is no transitive functional dependency, i.e. when a non-key is functionally dependent on another non-key column, which is functionally dependent on the primary key.
+
+### Examples of SQL keywords for syntax
+- SELECT
+- DISTINCT
+- FROM
+- WHERE
+- GROUP BY
+- HAVING
+- ORDER BY
+- LIKE
+
+### Wildcards
+- Using % can substitute for zero or more unknown characters
+- _ is used for substituting for a single unknown character
+- [character_list] can be used to bring back anything starting with those letters
+- [^character_list] can bring back anything that does not start with those letters
+All of these are best used with the LIKE keyword when defining a condition using WHERE.
+
+### String Functions
+- SUBSTRING(expression, start, length): makes a substring on an existing string, defining where to begin to cut on the existing string and how long to continue for.
+- CHARINDEX(letter, column): finds, for example, a letter in a column.
+- LEFT/RIGHT(column, n): takes the left/right n characters of a string in a column.
+- LTRIM/RTRIM: Used to remove spaces at the beginning or the end of a String.
+- LEN(string): finds the length of a given String.
+- REPLACE(column, string_to_replace, replace_with_string): Replace strings with other strings in a column.
+- UPPER/LOWER: convert a string to lower or upper case.
