@@ -106,3 +106,11 @@ DELETE FROM table_name;
 DELETE FROM table_name
 WHERE column_name_for_basis_of_data_delete = condition_on_which_row_to_delete; %this condition should define the data point that needs to be deleted. This will delete the WHOLE ROWS that fit the condition prescribed on columns.
 ```
+
+### Using NULL and NOT null
+
+You can add the phrase "NOT NULL" to the end of column names when setting up a table to make the column not empty by default.
+
+### Setting up a primary key when setting up a table
+
+Use the phrase "IDENTITY PRIMARY KEY" when setting up a table to select the primary key for that table. If you do not do this, one will be assigned automatically. If you do not do this you will not be able to change it after the table is made.
