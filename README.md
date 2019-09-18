@@ -53,3 +53,12 @@ CREATE DATABASE DB_name;
 
 USE DB_name;
 ```
+
+### Different Types of Data
++ CHAR(n): Set length, n, of data and it always has to be exactly that length.
++ VARCHAR(n): Set length, n, of data and entries can be any length up to that maximum length.
++ INT: Integer value only
++ DECIMAL(n,m)/NUMERIC(n,m): Numbers with a decimal point, n total digits, m digits after decimal point.
++ BINARY - string of 0 & 1's (up to 16 bits)
++ FLOAT - large mathematical number e.g. pi
++ BIT - 0 or 1, boolean
