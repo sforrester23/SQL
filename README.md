@@ -72,5 +72,37 @@ Column_1 DATA_TYPE
 Column_2 DATA_TYPE
 Column_3 DATA_TYPE
 ...
-  )
+  );
+```
+### Altering a table - adding a column
+
+```SQLite
+USE DB_name
+ALTER TABLE table_name ADD Column_name DATA_TYPE;
+```
+
+### Modifying a column's data type in a table
+
+```SQLite
+USE DB_name
+ALTER TABLE table_name
+ALTER COLUMN column_name DATA_TYPE;
+```
+
+### Change Data in a table
+```SQLite
+UPDATE table_name
+SET column_name_for_change = new_data_input
+WHERE column_name_for_basis_of_data_change = condition_on_which_row_to_change; %this condition should define the data point that needs to be changed. It will change all rows with entries that meet the condition, but only change the entry of that row in the column defined in "SET".%
+```
+
+### Delete all data in a table
+```SQLite
+DELETE FROM table_name;
+```
+
+### Delete data from a row
+```SQLite
+DELETE FROM table_name
+WHERE column_name_for_basis_of_data_delete = condition_on_which_row_to_delete; %this condition should define the data point that needs to be deleted. This will delete the WHOLE ROWS that fit the condition prescribed on columns.
 ```
