@@ -160,3 +160,32 @@ All of these are best used with the LIKE keyword when defining a condition using
 - LEN(string): finds the length of a given String.
 - REPLACE(column, string_to_replace, replace_with_string): Replace strings with other strings in a column.
 - UPPER/LOWER: convert a string to lower or upper case.
+
+### DATE Functions
+- GETDATE: returns current date
+- SYSDATETIME: returns the date and time of the computer being used
+- DATEADD(d/m/Y, amount_to_add, given_date): adds a certain number of days/months/years to a given date
+- DATEDIFF(d/m/Y, date_earliest, date_latest): finds the difference between two dates in days/months/years
+- YEAR(date): gets a year from a date
+- MONTH(date): gets a month from a date
+- DAY(date): gets a day from a date
+- FORMAT(date, 'dd/MM/YYYY'): changes given date to a chosen format
+
+### Using Case in SQL
+
+```SQLite
+SELECT CASE
+WHEN condition
+THEN 'output'
+ELSE 'alternative output'
+END AS 'column name for condition imposed'
+FROM table;
+```
+
+### Aggregate Functions
+- SUM: grand total of all columns for rows selected
+- AVG: average of all the columns rows selected
+- MIN/MAX: minimum/maximum in a column for rows selected
+- COUNT: for the total number of non-empty entries in rows selected.
+
+These must use a **GROUP BY** clause.
